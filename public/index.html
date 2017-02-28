@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<!-- (This includes icons from font-awesome, css from bootstrap, and your style.css file for your own custom css) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<!-- (This includes angular's js files, the route file for ngRoute, your controller, and your main angular app.js file) -->
+<script src="/js/angular/angular.min.js"></script>
+<script src="/js/angular/angular-route.js"></script>
+<script src="/controllers/home_controller.js"></script>
+<script src="/app.js"></script>
+
+
+
+<!-- (This is where your app is declared in the html) -->
+<body ng-app="myapp">
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#!">Home</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#!electrical">First Page</a></li>
+			<li><a href="#!braking">Second Page</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a class="fa fa-facebook" href="#!"></a></li>
+			<li><a class="fa fa-twitter" href="#!"></a></li>
+			<li><a class="fa fa-instagram" href="#!"></a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container-fluid">
+
+	<!-- (This is where your app will be loaded) -->
+	<ng-view></ng-view>
+	<!-- (This is the end of where your app is in the html) -->
+</div>
+
+
+
+
+</body>
+</html>
